@@ -3,6 +3,9 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
+/* Resume layout */
+
 .header{
     width: 100%;
     height:200px;
@@ -49,21 +52,22 @@
     height: 90%;
     display: flex;
     flex-direction: column;
+   
 }
 .mainstructure__contact{
     width: 99%;
     height: 25%;
 }
-.mainstructure__skills{
+.skills{
     width: 99%;
     height: 75%;
 }
 
-.mainstructure__skillsHeading{
+.skills_heading{
     font-family:sans-serif;
     font-size: 20px;
 }
-.mainstructure__skills__all{
+.skills__all{
     background-color: #CFD2CF;
     padding: 10px;
     width: auto;
@@ -72,14 +76,14 @@
     float: left;
     margin: 10px 5px;
 }
-.mainstructure__rightpart__innersection{
+.intersection__div{
     width: 100%;
     height: 150px;
 }
-.mainstructure__rightpart__innersectionHeading{
+.intersection__divHeading{
     font-family: sans-serif;
 }
-.mainstructure__underline{
+.intersection__underline{
     border: 1px solid;
     width: 90%;
 }
@@ -100,7 +104,7 @@
     width: 70%;
     height: 100%;
 }
-.footer__leftinnersection{
+.footer__leftpart-intersection{
     width: 100%;
     height: 50%;
 }
@@ -120,3 +124,6 @@
     width: 90%;
     border: 1px solid;
 }
+
+
+
