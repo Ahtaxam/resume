@@ -26,3 +26,60 @@
     width: 70%;
     height: 180px;
 }
+
+.mainstructure{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mainstructure__leftpart{
+    width: 220px;
+    height: 90%;
+    position: relative;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+.mainstructure__rightpart{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.mainstructure__contact{
+    width: 99%;
+    height: 25%;
+}
+.mainstructure__skills{
+    width: 99%;
+    height: 75%;
+}
+
+.mainstructure__skillsHeading{
+    font-family:sans-serif;
+    font-size: 20px;
+}
+.mainstructure__skills__all{
+    background-color: #CFD2CF;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    float: left;
+    margin: 10px 5px;
+}
+.mainstructure__rightpart__innersection{
+    width: 100%;
+    height: 150px;
+}
+.mainstructure__rightpart__innersectionHeading{
+    font-family: sans-serif;
+}
+.mainstructure__underline{
+    border: 1px solid;
+    width: 90%;
+}
