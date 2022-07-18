@@ -83,3 +83,40 @@
     border: 1px solid;
     width: 90%;
 }
+.footer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__leftpart{
+    width: 220px;
+    height: 100%;
+    position: relative;
+    left: 50px;
+}
+.footer__rightpart{
+    width: 70%;
+    height: 100%;
+}
+.footer__leftinnersection{
+    width: 100%;
+    height: 50%;
+}
+.footer__leftheading{
+    font-family: sans-serif;
+}
+.footer__underline{
+    border: 1px solid;
+    width: 80%;
+}
+.footer__rightheading{
+    font-family: sans-serif;
+    position: relative;
+    top: 8px;
+}
+.footer__rightunderline{
+    width: 90%;
+    border: 1px solid;
+}
