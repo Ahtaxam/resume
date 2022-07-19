@@ -106,7 +106,7 @@
 
 .section {
     width: 100%;
-    height: 150px;
+    height: auto;
 }
 
 .section__heading {
@@ -174,20 +174,79 @@
 .languages__section--level {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    color: gray;
+    color: #CFD2CF;
 }
 
 .interests__name {
     width: 100px;
     height: auto;
-    border: 1px solid gray;
-    /* position: relative;
-    top: 13px;
-    bottom: 10px;
-    left: 20px; */
+    border: 1px solid #CFD2CF;
     margin: 10px 10px;
     padding: 8px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
    
+}
+
+.education{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+}
+.education__heading{
+    font-size: 20px;
+}
+.education__duration{
+    font-size: small;
+    color: #CFD2CF;
+}
+
+
+.experience{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+}
+.experience__heading{
+    font-size: 20px;
+}
+.experience__duration{
+    font-size: small;
+    color: #CFD2CF;
+}
+
+
+.certificate{
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+.achievements{
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+.achievements__details{
+    font-size: small;
+    color: #CFD2CF;
+}
+.achievements__details--link{
+    text-decoration: none;
+    color: #CFD2CF;
+    font-size: small;
+}
+
+.projects{
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px 15px 0px;
+}
+.projects__link{
+    text-decoration: none;
+    color: #CFD2CF;
+    font-size: small;
 }
