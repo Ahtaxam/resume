@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -6,9 +6,9 @@
 
 /* Resume layout */
 
-.header{
+.header {
     width: 100%;
-    height:200px;
+    height: 200px;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,8 @@
     flex-wrap: wrap;
 
 }
-.header__image{
+
+.header__image {
     width: 180px;
     height: 180px;
     background-color: wheat;
@@ -24,13 +25,14 @@
     left: 70px;
     border-radius: 50%;
 }
-.header__introduction{
+
+.header__introduction {
     background-color: #2C3333;
     width: 70%;
     height: 180px;
 }
 
-.mainstructure{
+.mainstructure {
     width: 100%;
     height: 1000px;
     background-color: white;
@@ -38,7 +40,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.mainstructure__leftpart{
+
+.mainstructure__leftpart {
     width: 220px;
     height: 90%;
     position: relative;
@@ -46,27 +49,31 @@
     display: flex;
     flex-direction: column;
 }
-.mainstructure__rightpart{
+
+.mainstructure__rightpart {
     width: 70%;
     height: 90%;
     display: flex;
     flex-direction: column;
-   
-}
-.mainstructure__contact{
-    width: 99%;
-    height: 20%;
-}
-.skills{
-    width: 99%;
-    height: 80%;
+
 }
 
-.skills__heading{
-    font-family:sans-serif;
+.mainstructure__contact {
+    width: 99%;
+    height: auto;
+}
+
+.skills {
+    width: 99%;
+    height: auto;
+}
+
+.skills__heading {
+    font-family: sans-serif;
     font-size: 20px;
 }
-.skills__all{
+
+.skills__all {
     background-color: #CFD2CF;
     padding: 10px;
     width: auto;
@@ -74,45 +81,52 @@
     border-radius: 5px;
     float: left;
     margin: 10px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
 
-.languages{
+.languages {
     width: 99%;
-    height: 30%;
+    height: auto;
 }
-.languages__heading{
-    font-family: sans-serif;
-}
-.interests{
-    width: 99%;
-    height: 30%;
-}
-.interests__heading{
+
+.languages__heading {
     font-family: sans-serif;
 }
 
+.interests {
+    width: 99%;
+    height: 30%;
+}
 
-.section{
+.interests__heading {
+    font-family: sans-serif;
+}
+
+
+.section {
     width: 100%;
     height: 150px;
 }
-.section__heading{
+
+.section__heading {
     font-family: sans-serif;
 }
-.section__underline{
+
+.section__underline {
     border: 1px solid;
     width: 90%;
 }
 
 /* styling resume */
-.header__image--profile{
+.header__image--profile {
     width: 180px;
     height: 180px;
     border-radius: 50%;
 }
 
 
-.header__introduction--name{
+.header__introduction--name {
     font-family: Arial;
     color: white;
     position: relative;
@@ -120,20 +134,23 @@
     top: 10px;
     bottom: 5px;
 }
-.header__introduction--title{
+
+.header__introduction--title {
     font-family: sans-serif;
     color: white;
     position: relative;
     left: 10px;
     top: 15px;
 }
-.header__introduction--underline{
+
+.header__introduction--underline {
     position: relative;
     top: 18px;
     left: 10px;
     width: 20%;
 }
-.header__introduction--para{
+
+.header__introduction--para {
     position: relative;
     top: 25px;
     left: 10px;
@@ -141,4 +158,36 @@
     font-family: sans-serif;
     font-size: 15px;
     line-height: 22px;
+}
+
+.languages__section {
+    width: 100%;
+    height: auto;
+    margin: 5px 0px;
+}
+
+.languages__section--heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.languages__section--level {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: gray;
+}
+
+.interests__name {
+    width: 100px;
+    height: auto;
+    border: 1px solid gray;
+    /* position: relative;
+    top: 13px;
+    bottom: 10px;
+    left: 20px; */
+    margin: 10px 10px;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+   
 }
