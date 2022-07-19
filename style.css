@@ -1,36 +1,33 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-
 /* Resume layout */
-
-.header{
+.header {
     width: 100%;
-    height:200px;
+    height: 200px;
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
+    margin-bottom: 15px;
 }
-.header__image{
+.header__image {
     width: 180px;
     height: 180px;
     background-color: wheat;
-    position: relative;
-    left: 70px;
     border-radius: 50%;
 }
-.header__introduction{
+.introduction {
     background-color: #2C3333;
-    width: 70%;
+    width: 64%;
     height: 180px;
+    align-self: flex-end;
+    padding: 20px;
 }
-
-.mainstructure{
+.mainstructure {
     width: 100%;
     height: 1000px;
     background-color: white;
@@ -38,7 +35,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.mainstructure__leftpart{
+.mainstructure__leftpart {
     width: 220px;
     height: 90%;
     position: relative;
@@ -46,61 +43,177 @@
     display: flex;
     flex-direction: column;
 }
-.mainstructure__rightpart{
+.mainstructure__rightpart {
     width: 70%;
     height: 90%;
     display: flex;
     flex-direction: column;
-   
 }
-.mainstructure__contact{
+.mainstructure__contact {
     width: 99%;
-    height: 20%;
+    height: auto;
 }
-.skills{
+.skills {
     width: 99%;
-    height: 80%;
+    height: auto;
 }
-
-.skills__heading{
-    font-family:sans-serif;
+.skills__heading {
+    font-family: sans-serif;
     font-size: 20px;
 }
-.skills__all{
-    background-color: #CFD2CF;
+.skills__all {
+    background-color: #6e7264;
     padding: 10px;
     width: auto;
     height: auto;
     border-radius: 5px;
     float: left;
     margin: 10px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: white;
 }
-
-.languages{
+.languages {
+    width: 99%;
+    height: auto;
+}
+.languages__heading {
+    font-family: sans-serif;
+}
+.interests {
     width: 99%;
     height: 30%;
 }
-.languages__heading{
+.interests__heading {
     font-family: sans-serif;
 }
-.interests{
-    width: 99%;
-    height: 30%;
-}
-.interests__heading{
-    font-family: sans-serif;
-}
-
-
-.section{
+.section {
     width: 100%;
-    height: 150px;
+    height: auto;
 }
-.section__heading{
+.section__heading {
     font-family: sans-serif;
+    margin-left: 10px;
 }
-.section__underline{
+.section__underline {
     border: 1px solid;
     width: 90%;
 }
-
+/* styling resume */
+.header__image--profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.introduction__name {
+    font-family: Arial;
+    color: white;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    bottom: 5px;
+}
+.introduction__title {
+    font-family: sans-serif;
+    color: white;
+    position: relative;
+    left: 10px;
+    top: 15px;
+}
+.introduction__underline {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    width: 20%;
+}
+.introduction__para {
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+}
+.languages__section {
+    width: 100%;
+    height: auto;
+    margin: 5px 0px;
+}
+.languages__section-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.languages__section-level {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #6e7264;
+}
+.interests__name {
+    width: 100px;
+    height: auto;
+    border: 1px solid #6e7264;
+    margin: 10px 10px;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.education{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+.education__heading{
+    font-size: 20px;
+}
+.education__duration{
+    font-size: small;
+    color: #6e7264;
+}
+.experience{
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+.experience__heading{
+    font-size: 20px;
+}
+.experience__duration{
+    font-size: small;
+    color: #6e7264;
+}
+.certificate{
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+}
+.achievements{
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+.achievements__details{
+    font-size: small;
+    color: #6e7264;
+}
+.achievements__details--link{
+    text-decoration: none;
+    color: #6e7264;
+    font-size: small;
+}
+.projects{
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px 15px 0px;
+}
+.projects__link{
+    text-decoration: none;
+    color: #6e7264;
+    font-size: small;
+}
