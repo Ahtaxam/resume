@@ -1,219 +1,235 @@
-* {
+
+*{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
 }
-/* Resume layout */
-.header {
-    width: 100%;
-    height: 200px;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
+@media screen and (min-width:360px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10,auto);
+        grid-template-areas: 
+        "header"
+        "contacts"
+        "education"
+        "experience"
+        "certificate"
+        "achievements"
+        "projects"
+        "skills"
+        "languages"
+        "interests"
+    }
+    .header{
+        grid-area: header;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        padding: 20px;
+    }
+    .contacts{
+        grid-area: contacts;
+        margin: 20px;
+    }
+    .education{
+        grid-area: education;
+    }
+    .experience{
+        grid-area: experience;
+    }
+    .certificate{
+        grid-area: certificate;
+    }
+    .achievements{
+        grid-area: achievements;
+    }
+    .projects{
+        grid-area: projects;
+    }
+    .skills{
+        grid-area: skills;
+        margin: 15px;
+    }
+    .languages{
+        grid-area: languages;
+        margin: 15px;
+    }
+    .interests{
+        grid-area: interests;
+        margin: 15px;
+    }
+
+    .header__image{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: aquamarine;
+        margin-top: 20px;
+    }
+    .header__image--profile{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .introduction{
+        background-color: #2C3333;
+        color: white;
+        padding: 10px;
+        padding: 10px;
+    }
+    .introduction__name{
+        font-family: Arial;
+    }
+    .introduction__title{
+        font-family: serif;
+    }
+    .introduction__para{
+        margin: 5px;
+        font-family: sans-serif;
+        font-size: small;
+    }
+
+
+    .education{
+        font-family: sans-serif;
+        margin: 10px;
+    }
+    .education__heading{
+        font-size: 20px;
+    }
+    .education__duration{
+        font-size: small;
+        color: #6e7264;
+    }
+    .experience{
+        height: auto;
+        font-family: sans-serif;
+        margin: 10px;
+    }
+    .experience__heading{
+        font-size: 20px;
+    }
+    .experience__duration{
+        font-size: small;
+        color: #6e7264;
+    }
+
+    .certificate{
+        width: 100%;
+        height: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 15px;
+    }
+
+    .achievements{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px;
+    }
+    .achievements__details{
+        font-size: small;
+        color: #6e7264;
+    }
+    .achievements__details--link{
+        text-decoration: none;
+        color: #6e7264;
+        font-size: small;
+    }
+    .projects{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 15px;
+    }
+    .projects__link{
+        text-decoration: none;
+        color: #6e7264;
+        font-size: small;
+    }
+    .skills__heading {
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+    .skills__all {
+        background-color: #6e7264;
+        padding: 10px;
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+        float: left;
+        margin: 10px 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        color: white;
+    }
+
+    .languages__section {
+        margin: 10px;
+    }
+    .languages__section-heading {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+    }
+    .languages__section-level {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        color: #6e7264;
+    }
+
+    .interests__name {
+        width: 100px;
+        height: auto;
+        border: 1px solid #6e7264;
+        margin: 10px 10px;
+        padding: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        border-radius: 5px;
+    }
 }
-.header__image {
-    width: 180px;
-    height: 180px;
-    background-color: wheat;
-    border-radius: 50%;
-}
-.introduction {
-    background-color: #2C3333;
-    width: 64%;
-    height: 180px;
-    align-self: flex-end;
-    padding: 20px;
-}
-.mainstructure {
-    width: 100%;
-    height: 1000px;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.mainstructure__leftpart {
-    width: 220px;
-    height: 90%;
-    position: relative;
-    left: 50px;
-    display: flex;
-    flex-direction: column;
-}
-.mainstructure__rightpart {
-    width: 70%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-}
-.mainstructure__contact {
-    width: 99%;
-    height: auto;
-}
-.skills {
-    width: 99%;
-    height: auto;
-}
-.skills__heading {
-    font-family: sans-serif;
-    font-size: 20px;
-}
-.skills__all {
-    background-color: #6e7264;
-    padding: 10px;
-    width: auto;
-    height: auto;
-    border-radius: 5px;
-    float: left;
-    margin: 10px 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    color: white;
-}
-.languages {
-    width: 99%;
-    height: auto;
-}
-.languages__heading {
-    font-family: sans-serif;
-}
-.interests {
-    width: 99%;
-    height: 30%;
-}
-.interests__heading {
-    font-family: sans-serif;
-}
-.section {
-    width: 100%;
-    height: auto;
-}
-.section__heading {
-    font-family: sans-serif;
-    margin-left: 10px;
-}
-.section__underline {
-    border: 1px solid;
-    width: 90%;
-}
-/* styling resume */
-.header__image--profile {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-}
-.introduction__name {
-    font-family: Arial;
-    color: white;
-    position: relative;
-    left: 10px;
-    top: 10px;
-    bottom: 5px;
-}
-.introduction__title {
-    font-family: sans-serif;
-    color: white;
-    position: relative;
-    left: 10px;
-    top: 15px;
-}
-.introduction__underline {
-    position: relative;
-    top: 18px;
-    left: 10px;
-    width: 20%;
-}
-.introduction__para {
-    position: relative;
-    top: 25px;
-    left: 10px;
-    color: white;
-    font-family: sans-serif;
-    font-size: 15px;
-    line-height: 22px;
-}
-.languages__section {
-    width: 100%;
-    height: auto;
-    margin: 5px 0px;
-}
-.languages__section-heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-}
-.languages__section-level {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    color: #6e7264;
-}
-.interests__name {
-    width: 100px;
-    height: auto;
-    border: 1px solid #6e7264;
-    margin: 10px 10px;
-    padding: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    border-radius: 5px;
-}
-.education{
-    width: 100%;
-    height: auto;
-    font-family: sans-serif;
-    margin-left: 10px;
-}
-.education__heading{
-    font-size: 20px;
-}
-.education__duration{
-    font-size: small;
-    color: #6e7264;
-}
-.experience{
-    width: 100%;
-    height: auto;
-    font-family: sans-serif;
-    margin-left: 10px;
-}
-.experience__heading{
-    font-size: 20px;
-}
-.experience__duration{
-    font-size: small;
-    color: #6e7264;
-}
-.certificate{
-    width: 100%;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 15px;
-}
-.achievements{
-    width: 100%;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
-}
-.achievements__details{
-    font-size: small;
-    color: #6e7264;
-}
-.achievements__details--link{
-    text-decoration: none;
-    color: #6e7264;
-    font-size: small;
-}
-.projects{
-    width: 100%;
-    height: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px 0px 15px 0px;
-}
-.projects__link{
-    text-decoration: none;
-    color: #6e7264;
-    font-size: small;
+
+
+@media screen and (min-width:998px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 450px 700px;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        "header header"
+        "contacts education"
+        "skills experience"
+        "skills certificate"
+        "skills achievements"
+        "languages projects"
+        "interests projects"
+    }
+    .header{
+        grid-template-columns: 420px 700px;
+        gap: 20px;
+        padding: 20px;
+    }
+    .skills{
+        grid-area: skills;
+        height: 200px;
+    }
+    .introduction__para{
+        margin: 5px;
+        font-family: sans-serif;
+        font-size: large;
+        line-height: 25px;
+    }
+    .skills__all {
+        font-size: small;
+        background-color: #6e7264;
+        padding: 10px;
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+        margin: 10px 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        display: block;
+    }
+
+    .interests__name {
+       font-size: 10px;
+    }
 }
